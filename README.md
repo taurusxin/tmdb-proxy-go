@@ -5,7 +5,7 @@
 ### Docker 部署
 
 ```bash
-docker run -p 8080:8080 taurusxin/tmdb-proxy-go
+docker run -d -p 8080:8080 --name tmdb-proxy-go taurusxin/tmdb-proxy-go
 ```
 
 服务启动在 8080 端口
@@ -21,17 +21,17 @@ go build
 启动服务（默认8080端口）
 
 ```bash
-./tmdb-proxy
+./tmdb-proxy-go
 ```
 
 指定端口启动服务
 
 ```bash
-./tmdb-proxy -port 9090
+./tmdb-proxy-go -port 9090
 ```
 
 查看帮助信息
 
 ```bash
-./tmdb-proxy -help
+./tmdb-proxy-go -help
 ```
