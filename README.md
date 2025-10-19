@@ -2,6 +2,16 @@
 
 ## 使用方法
 
+### Docker 部署
+
+```bash
+docker run -p 8080:8080 taurusxin/tmdb-proxy-go
+```
+
+服务启动在 8080 端口
+
+### 手动部署
+
 编译应用程序
 
 ```bash
