@@ -3,7 +3,7 @@ name: Docker - Build and Push (on tag)
 on:
   push:
     tags:
-      - '**'   # 任意 tag；如只匹配 v*，改为 'v*'
+      - 'v*'   # 任意 tag；如只匹配 v*，改为 'v*'
 
 jobs:
   build-and-push:
